@@ -1,0 +1,96 @@
+$primaryBtnColor : yellow;
+
+@mixin flexDir ($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin cardView {
+    height: 210px;
+    width: 150px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: green;
+    color: #fff;
+    font-family: "Exo 2", sans-serif;
+    @include flexDir(column);
+    justify-content: space-between;
+}
+
+.deckInfo {
+    @include flexDir(row);
+    align-items: center;
+    justify-content: space-between;
+}
+
+#images {
+    @include flexDir(column);
+    h1 {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.btn {
+    background-color: $primaryBtnColor;
+    cursor: pointer;
+}
+
+#new-deck {
+    padding: 10px;
+}
+
+#reload {
+    padding: 10px 20px;
+}
+
+.startAgain {
+    display: none;
+}
+
+.draw {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.view-image {
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+.dispContent P {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+@media(max-width:500px){
+    .view-image{
+        @include flexDir(row)
+    }
+}
+
+.showImg{
+    @include cardView();
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.imgView {
+    @include cardView();
+}
+
+
+.imageSpacer {
+    margin-top: 60px;
+}
+
+.disabled {
+    background-color: grey;
+}

@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: green;
+  color: #fff;
+  font-family: "Exo 2", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.deckInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#images h1 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: yellow;
+  cursor: pointer;
+}
+
+#new-deck {
+  padding: 10px;
+}
+
+#reload {
+  padding: 10px 20px;
+}
+
+.startAgain {
+  display: none;
+}
+
+.draw {
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+.view-image {
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.dispContent P {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media (max-width: 500px) {
+  .view-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.showImg {
+  height: 210px;
+  width: 150px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.imgView {
+  height: 210px;
+  width: 150px;
+}
+
+.imageSpacer {
+  margin-top: 60px;
+}
+
+.disabled {
+  background-color: grey;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>War</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap">
+    <link href="/style/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="deckInfo">
+        <button class="btn" id="new-deck">Get New Deck</button>
+        <p id="remaining-cards"></p>
+        <button class="btn startAgain" id="reload">Restart</button>
+    </div>
+    
+    <div id="images" class="view-image">
+        <h1 id="winner">Game of War!</h1>
+        <div class="dispContent">
+            <P>
+                Computer: <span id="ai-score">0</span>
+            </P>
+            <div id="image-holder" class="showImg"></div>
+        </div>
+        <div class="dispContent">
+            <div id="image-holder" class="showImg imageSpacer"></div>
+            <P>
+                You: <span id="player-score">0</span>
+            </P>
+        </div>
+        
+    </div>
+    <button id="draw-cards" class="btn draw" disabled>Draw Cards</button>
+
+    <script src="/index.js"></script>
+</body>
+</html>
